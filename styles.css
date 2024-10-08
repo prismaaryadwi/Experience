@@ -41,7 +41,7 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
     animation: autoShow;
-    animation-timeline: view(0% 80%);
+    animation-timeline: view(0% 90%);
     color: rgb(46,46,46);
 }
 
