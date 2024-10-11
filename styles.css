@@ -12,8 +12,7 @@ body {
 }
 
 .h1 {
-    text-align: center;
-    margin-left: 10%;
+    margin-left: 18.5%;
     margin-top: 1%;
     font-size: 200px;
     font-family: playfair display;
@@ -199,13 +198,13 @@ body {
 }
 
 .braveText h1 {
-    font-size: 220px;
+    font-size: 110px;
     font-family: playfair;
     font-style: italic;
 }
 
 .braveText p {
-    font-size: 110px;
+    font-size: 55px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -216,13 +215,13 @@ body {
 }
 
 .dreamText h1 {
-    font-size: 220px;
+    font-size: 110px;
     font-family: playfair;
     font-style: italic;
 }
 
 .dreamText p {
-    font-size: 110px;
+    font-size: 55px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -233,13 +232,13 @@ body {
 }
 
 .smileText h1 {
-    font-size: 220px;
+    font-size: 110px;
     font-family: playfair;
     font-style: italic;
 }
 
 .smileText p {
-    font-size: 110px;
+    font-size: 55px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -250,13 +249,13 @@ body {
 }
 
 .peaceText h1 {
-    font-size: 220px;
+    font-size: 110px;
     font-family: playfair;
     font-style: italic;
 }
 
 .peaceText p {
-    font-size: 110px;
+    font-size: 55px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -267,16 +266,33 @@ body {
 }
 
 .focusText h1 {
-    font-size: 220px;
+    font-size: 110px;
     font-family: playfair;
     font-style: italic;
 }
 
 .focusText p {
-    font-size: 110px;
+    font-size: 55px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.dreamText, .smileText, .peaceText, .braveText, .focusText {
+    opacity: 0; /* Default untuk animasi */
+    animation: slideInFromLeft 1.5s ease-in-out forwards;
+    animation-timeline: view();
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+    }
+    45% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 
 /* Tombol scroll ke atas */
 .scroll-top {
